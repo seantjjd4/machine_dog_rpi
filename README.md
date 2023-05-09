@@ -9,12 +9,12 @@ machine_dog_rpi is a system built base on ROS2 (humble) structure for **Raspberr
 #### Set locale
 Make sure you have a locale which supports UTF-8.
 ```bash
-locale  # check for UTF-8
+$ locale  # check for UTF-8
 
-sudo apt update && sudo apt install locales
-sudo locale-gen en_US en_US.UTF-8
-sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
-export LANG=en_US.UTF-8
+$ sudo apt update && sudo apt install locales
+$ sudo locale-gen en_US en_US.UTF-8
+$ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+$ export LANG=en_US.UTF-8
 
 locale  # verify settings
 ```
@@ -23,8 +23,8 @@ You will need to add the ROS 2 apt repository to your system.
 
 + Ensure that the Ubuntu Universe repository is enabled.
 ```bash
-sudo apt install software-properties-common
-sudo add-apt-repository universe
+$ sudo apt install software-properties-common
+$ sudo add-apt-repository universe
 ```
 
 + Add the ROS 2 GPG key with apt.
